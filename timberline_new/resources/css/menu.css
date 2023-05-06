@@ -1,0 +1,264 @@
+@import "index.css";
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-up-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.iceCream_cont {
+background-color: white;
+border-radius: 20px;
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+padding: 50px 100px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+@media only screen and ( max-width: 600px ) {
+  .iceCream_cont {
+    margin-left:20px;
+    margin-right:20px;
+    flex-direction: column;
+  
+  }
+}
+.iceCream_cont2 {
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    @media only screen and ( max-width: 600px ) {
+      .iceCream_cont2 {
+        margin-left:20px;
+        margin-right:20px;
+        flex-direction: column;
+      
+      }
+    }
+.col img {
+    width: 260px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+@media only screen and ( max-width: 600px ) {
+  .col img {
+    width: 180px;
+    height: 200px;
+  
+  }
+}
+
+.textHold2 {
+padding:2px;
+background-color: #007A80;
+font-family: 'Roboto Slab', serif;
+color: white;
+font-size: 23px;
+border-radius: 20px;
+letter-spacing: 2px;
+padding-left:10px;
+padding-right:10px;
+text-align: center;
+}
+
+@media only screen and ( max-width: 600px ) {
+  .textHold2 {
+    font-size: 17px;
+  
+  }
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right:5px;
+}
+@media only screen and ( max-width: 600px ) {
+  .col {
+    margin:0px;
+  
+  }
+}
+
+.flavorDesc {
+    padding:2px;
+    font-family: 'Roboto Slab', serif;
+    margin-top:10px;
+    color: #389997;
+    font-size: 20px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 390px;
+    }
+
+    @media only screen and ( max-width: 600px ) {
+      .flavorDesc {
+        padding-bottom:30px;
+        width: 290px;
+        font-size: 15px;
+      
+      }
+    }
+
+#mediumS {
+    height: 500px;
+}
+
+@media only screen and ( max-width: 600px ) {
+  #mediumS {
+    display:none;
+  
+  }
+}
+
+#mediumSW{
+    height: 500px;
+    transform: rotate(180deg);
+}
+@media only screen and ( max-width: 600px ) {
+  #mediumSW {
+    display:none;
+  
+  }
+}
+#smallW {
+    height: 300px;
+    width: 40px;
+}
+.sky {
+    background: rgb(172,216,240);
+background: linear-gradient(0deg, rgba(172,216,240,1) 0%, rgba(162,208,186,1) 67%);
+}
+
+.divider {
+    height: 1px;
+    background-color: #a2d0ba;
+    padding:2px;
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+  }
+
+
+  #coverphoto {
+    border-radius: 10px;
+    border: 1.6px solid white;
+    padding: 9px;
+  }
+
+  @media only screen and ( max-width: 600px ) {
+    #coverphoto {
+      width: 330px;
+      padding: 3px;
+      margin-top: 20px;
+    
+    }
+  }
+  #coverphoto2 {
+    border-radius: 10px;
+    border: 2px solid  #389997;
+    padding: 9px;
+    width: 400px;
+    height: 500px;
+  }
+  @media only screen and ( max-width: 600px ) {
+    #coverphoto2 {
+     width: 200px;
+     height: 300px;
+     margin-bottom: 30px;
+    
+    }
+  }
+  #title {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 24px;
+    padding-top:50px;
+  }
+  
+  @media only screen and ( max-width: 600px ) {
+    #title {
+      font-size: 15px;
+    
+    }
+  }
+  #aboutDesc {
+    font-family: 'Roboto Slab', serif;
+    color: #154A62;
+    font-size: 20px;
+    padding-top:20px;
+    padding-left:80px;
+    text-indent: 60px;
+  }
+  @media only screen and ( max-width: 600px ) {
+    #aboutDesc {
+      font-size: 15px;
+      padding-left: 1px;
+      padding-right:1px;
+      padding-top: 10px;
+      padding-bottom:10px;
+      text-indent: 0px;
+    }
+  }
+  .aboutCont {
+    background-color: white;
+border-radius: 20px;
+margin-left: 200px;
+margin-right: 200px;
+padding: 50px 100px;
+display: flex;
+flex-direction: row;
+align-items: center;
+
+  }
+
+  @media only screen and ( max-width: 600px ) {
+    .aboutCont {
+      margin-left: 20px;
+      margin-right: 20px;
+    padding: 15px 25px;
+    flex-direction: column;
+    
+    }
+  }
+  #sm {
+    height: 80px;
+  }
+
+  @media only screen and ( max-width: 600px ) {
+    #sm {
+      width: 200px;
+      height: 50px;
+    
+    }
+  }
+
+  #logo {
+    width: 300px;
+
+  } @media only screen and ( max-width: 600px ) {
+    #logo {
+      width: 200px;
+ 
+    
+    }
+  }

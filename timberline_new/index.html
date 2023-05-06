@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Timberline Ice Cream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--- scales the content of site to match screen dimensions -->
+    <link rel="icon" href="./resources/images/logo.jpg">                   <!-- favicon -->
+    <link rel="stylesheet" href="./resources/css/index.css" />             <!-- style sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">            <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf45e25b55.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+
+<div id="preloader">
+  <div class="loader">
+    <img src="./resources/images/loading.gif" alt="Loading">
+  </div>
+</div>
+
+<script>
+  window.addEventListener("load", function () {
+  const preloader = document.querySelector("#preloader");
+  preloader.classList.add("hide-preloader");});
+</script>
+
+<div class="header"> 
+    <i class="fa-solid fa-ice-cream"></i>
+    <a href="./menu.html" class="linkHov">        WHAT'S SWEET? </a>  <a> |</a>
+    <a href="./about.html" class="linkHov">       ABOUT         </a>  <a> | </a>
+    <a href="./order.html" class="linkHov">       ORDER         </a>   
+    <i class="fa-solid fa-ice-cream"></i>
+
+</div>
+
+
+<div class="new">
+  <div class="container"> 
+  
+  <img src="./resources/images/NN.png" id="increase1">
+
+
+  <div class="container-1"> 
+    
+    <div class="textHold"> HANDCRAFTED, SMALL-BATCH, SUPER-PREMIUM </div> <br>
+
+    <img src="./resources/images/TIC logo-svg.png">
+    <a> MADE IN FLAGSTAFF, ARIZONA  </a>
+  
+  </div>
+  <img src="./resources/images/iceCC.png" id="increase">
+  </div>
+  
+</div>
+
+<div class="main" id="space0">
+  <div class="whole">
+
+  <div class="left">
+    <img src="./resources/images/div2.png" id="shorter"> 
+
+  
+    <a><b>Where to find us </b><br></a>
+    <a>
+    Meteor Crater <br>
+    FlagTag AZ    <br>
+    Flagstaff Farmer's Markets <br>
+  </a>
+
+  <img src="./resources/images/div2.png" id="shorter"> 
+  </div>
+
+  <img src="./resources/images/div3.png" id="short"> 
+  <div class="right">
+    <img src="./resources/images/another.png" id="medium"> 
+    
+      <a><b>We do special events </b> <br> </a>
+      <a>
+      Birthdays <br>
+      Weddings  <br>
+      Employee Appreciation    <br>
+      Festivals <br>
+      and more!
+
+    </a>
+    <img src="./resources/images/another.png" id="medium"> 
+    </div>
+    </div>
+</div>
+
+<div class="new" id="space">
+  <div class="container-2"> 
+    
+  <a> At Timberline Ice Cream, we're handcrafting super-premium ice cream and candy in small
+    batches using only the highest quality local and regional ingredients. Our ice cream is made at
+    7000ft elevation in beautiful Flagstaff, Arizona and can be found at various events and locations
+    across northern Arizona. For wholesale ice cream orders and nut brittle orders, please visit our
+    Order page for more information, or contact sales@TICflagstaff.com. Thank you for your
+    support of our small business! </a>
+    
+
+  </div>
+</div>
+
+<div class="skySection">
+  <img src="./resources/images/woods.png" >
+</div>
+
+
+<div class="footer">
+  <hr>
+  
+  <a>Copyright 2022. Timberline Handcrafted Ice Cream and Candy. All rights reserved. </a>
+  <img src="./resources/images/footDiv.png" id="small" >
+  <a href="https://www.instagram.com/nic_b_ticflagstaff/"> <i class="fa-brands fa-instagram" id="icon"></i> </a>
+  <a href = "mailto: sales@TICflagstaff.com"><i class="fa-solid fa-envelope" id="icon"></i> </a>
+  <hr>
+  
+</div>
+
+<script>
+  const space = document.getElementById('space0');
+
+function fadeIn() {
+  const spaceTop = space.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (spaceTop < windowHeight) {
+    space.classList.add('show');
+    window.removeEventListener('scroll', fadeIn);
+  }
+}
+
+window.addEventListener('scroll', fadeIn);
+</script>
+</body>
+</html>
